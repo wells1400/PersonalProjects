@@ -1,0 +1,5 @@
+days,UserPresence,EnergyCost,Threshold
+1,0,0.00014,0.2
+2,1,0.00007,0.6
+3,1,0.00012,0.3
+4,0,0.00013,0.5

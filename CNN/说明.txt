@@ -1,0 +1,3 @@
+CNN的numpy实现，即不使用tensorflow架构而搭建的CNN网络。
+
+运行train.py进行训练，运行test.py进行测试。
