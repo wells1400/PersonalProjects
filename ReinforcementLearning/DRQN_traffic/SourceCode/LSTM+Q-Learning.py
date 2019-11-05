@@ -94,7 +94,7 @@ def train_lstm(batch_size=100, time_step=15, train_begin=0, train_end=1500):
     pred, _ = lstm(X)
     # 损失函数
     loss = tf.reduce_mean(tf.square(tf.reshape(pred, [-1])-tf.reshape(Y, [-1])))
-    train_op = tf.train.AdamOptimizer(lr).minimize(koss)
+    train_op = tf.train.AdamOptimizer(lr).minimize(loss)
     saver = tf.train.Saver(tf.global_variables(), max_to_keep=15)
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
